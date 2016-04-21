@@ -2,9 +2,9 @@
 - hosts: overcloud
   vars:
     metadata:
-      name: Hardware Discovery
-      description: Validations that run after the hardware was discovered.
-      stage: discovery
+      name: Introspection
+      description: Validations that run after the hardware was introspected.
+      stage: introspection
 - include: ../validations/discovery_diff.yaml
 - include: ../validations/undercloud-disk-space.yaml
 - include: ../validations/undercloud-ram.yaml
